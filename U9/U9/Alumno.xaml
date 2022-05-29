@@ -1,0 +1,57 @@
+﻿<Window x:Class="U9.Alumno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:U9"
+        mc:Ignorable="d"
+        Title="Alumnos" Height="450" Width="800">
+
+    <Grid>
+      
+                <TextBox Name="tbDni" HorizontalAlignment="Left" Height="23" Margin="136,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tbDni_TextChanged" RenderTransformOrigin="0.885,0.558"/>
+                <Label Content="DNI" HorizontalAlignment="Left" Margin="56,26,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="dirección" HorizontalAlignment="Left" Height="23" Margin="136,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tbDni_TextChanged"/>
+                <Label Content="Dirección" HorizontalAlignment="Left" Margin="56,169,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="Apellidos" HorizontalAlignment="Left" Height="23" Margin="136,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tbDni_TextChanged"/>
+                <Label Content="Apellidos" HorizontalAlignment="Left" Margin="56,113,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="nombre" HorizontalAlignment="Left" Height="23" Margin="136,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tbDni_TextChanged"/>
+                <Label Content="Nombre " HorizontalAlignment="Left" Margin="56,71,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="telefono" HorizontalAlignment="Left" Height="23" Margin="411,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tbDni_TextChanged"/>
+                <Label Content="Teléfono" HorizontalAlignment="Left" Margin="331,30,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" Margin="411,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" TextChanged="tbDni_TextChanged" RenderTransformOrigin="0.62,2.719"/>
+                <Label Content="Email" HorizontalAlignment="Left" Margin="331,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-1.938"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Button Content="Atras" HorizontalAlignment="Left" Margin="421,297,0,0" VerticalAlignment="Top" Width="126" Click="Atras" Height="25"/>
+                <Button Content="Adelante" HorizontalAlignment="Left" Margin="644,297,0,0" VerticalAlignment="Top" Width="126" Click="Adelante" Height="25"/>
+                <Button Content="Primero" HorizontalAlignment="Left" Margin="421,230,0,0" VerticalAlignment="Top" Width="126" Click="MostrarPrimero" RenderTransformOrigin="0.619,5.011" Height="25"/>
+                <Button Content="Último" HorizontalAlignment="Left" Margin="644,230,0,0" VerticalAlignment="Top" Width="126" Click="MostrarUltimo" Height="25"/>
+                <GroupBox Header="Nuevo Registro" HorizontalAlignment="Left" Height="125" Margin="49,250,0,0" VerticalAlignment="Top" Width="252">
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="65" Content="Nuevo" Margin="5,5,5,10" Click="BotonNuevo"  />
+                        <Button  Name="BtAnydir" Width="65" Content="Añadir" Margin="5,5,5,10" Click="BotonAnyadir"/>
+
+                    </StackPanel>
+                </GroupBox>
+                <Button Content="Actualizar" HorizontalAlignment="Left" Margin="421,172,0,0" VerticalAlignment="Top" Width="126" Click="BotonActualizar" RenderTransformOrigin="2.381,-5.229" Height="25"/>
+                <Button Content="Borrar" HorizontalAlignment="Left" Margin="644,172,0,0" VerticalAlignment="Top" Width="126" Click="BotonBorrar" Height="25"/>
+                <Label Name="pagina" Content="" HorizontalAlignment="Left" Margin="347,383,0,0" VerticalAlignment="Top" Width="131"/>
+                <Button Content="Mostrar Profesores" HorizontalAlignment="Left" Margin="478,129,0,0" VerticalAlignment="Top" Width="75" Click="MostrarProfesores"/>
+
+
+
+
+
+
+         
+
+    </Grid>
+</Window>
